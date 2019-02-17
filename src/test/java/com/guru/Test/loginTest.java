@@ -32,8 +32,17 @@ public class loginTest
 	public void action()
 	{
 		// Enter UserID
-		driver.findElement(By.xpath("//tr[.//td[text()='UserID']]//td[2]//input")).sendKeys("mngr174719");
-		driver.findElement(By.xpath("//tr[.//td[text()='Password']]//td[2]//input")).sendKeys("vygenur");
+		type("UserID","mngr174719");
+		type("Password","vygenur");
+		
+		void type(String location, String Value)
+		{
+			
+			String xpath = "//tr[.//td[text()='" +location+ "']]//td[2]//input";
+			driver.findElement(By.xpath(xpath)).sendKeys(Value);
+		}
+//		driver.findElement(By.xpath("//tr[.//td[text()='UserID']]//td[2]//input")).sendKeys("mngr174719");
+//		driver.findElement(By.xpath("//tr[.//td[text()='Password']]//td[2]//input")).sendKeys("vygenur");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 	}
