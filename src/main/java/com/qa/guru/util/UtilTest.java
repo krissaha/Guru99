@@ -30,16 +30,16 @@ public class UtilTest extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 15;
 
-	public static void sendkeys(WebDriver driver, WebElement element, String value) {
+	public static void type(By locator, String value) {
 		int timeout = Integer.parseInt(prop.getProperty("Explicitwait"));
-		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
-		element.sendKeys(value);
+		WebElement wait = new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOfElementLocated(locator));
+		wait.sendKeys(value);
 	}
 
-	public static void element_click(WebDriver driver, WebElement element) {
+	public static void click_ele(By locator) {
 		int timeout = Integer.parseInt(prop.getProperty("Explicitwait"));
-		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
-		element.click();
+		WebElement wait = new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(locator));
+		wait.click();
 	}
 
 	public static void scrollDown(WebDriver driver, WebElement element) {

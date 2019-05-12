@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 03 13:30:55 IST 2019</td>
+<td>Started on:</td><td>Sat May 11 22:42:43 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38369 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11838 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,41 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.guru.Test.loginTest.action()'><b>action</b><br>Test class: com.guru.Test.loginTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	The method type(String, String) is undefined for the type loginTest
-	The method type(String, String) is undefined for the type loginTest
-	void is an invalid type for the variable type
-	Syntax error on token &quot;(&quot;, ; expected
-	Syntax error on token &quot;,&quot;, ; expected
-	Syntax error on token &quot;)&quot;, ; expected
-
-	at com.guru.Test.loginTest.action(loginTest.java:35)
+<td title='com.guru.Test.IndexTest.reset()'><b>reset</b><br>Test class: com.guru.Test.IndexTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You Have Succesfully Logged Out!!}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;ANUKRISH&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 53af52b8b394153174b389c861764598
+*** Element info: {Using=xpath, value=//tr[.//td[text()=&apos;UserID&apos;]]//td[2]//input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.qa.guru.util.UtilTest.type(UtilTest.java:35)
+	at com.qa.guru.pages.IndexPage.reset(IndexPage.java:58)
+	at com.guru.Test.IndexTest.reset(IndexTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,16 +135,41 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1697752980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1697752980'><pre>java.lang.Error: Unresolved compilation problems: 
-	The method type(String, String) is undefined for the type loginTest
-	The method type(String, String) is undefined for the type loginTest
-	void is an invalid type for the variable type
-	Syntax error on token &quot;(&quot;, ; expected
-	Syntax error on token &quot;,&quot;, ; expected
-	Syntax error on token &quot;)&quot;, ; expected
-
-	at com.guru.Test.loginTest.action(loginTest.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2059592603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2059592603'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You Have Succesfully Logged Out!!}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;ANUKRISH&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\DELL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 53af52b8b394153174b389c861764598
+*** Element info: {Using=xpath, value=//tr[.//td[text()=&apos;UserID&apos;]]//td[2]//input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.qa.guru.util.UtilTest.type(UtilTest.java:35)
+	at com.qa.guru.pages.IndexPage.reset(IndexPage.java:58)
+	at com.guru.Test.IndexTest.reset(IndexTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,7 +197,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.guru.Test.loginTest@6500df86</td></tr>
+<td>com.guru.Test.IndexTest@3fee9989</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.guru.Test.IndexTest.loginsuccess()'><b>loginsuccess</b><br>Test class: com.guru.Test.IndexTest</td>
+<td></td>
+<td>2</td>
+<td>com.guru.Test.IndexTest@3fee9989</td></tr>
 </table><p>
 </body>
 </html>
